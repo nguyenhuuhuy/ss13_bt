@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="baitap_1()">bai 1</button><br />
+    <button onclick="baitap_2()">bai 2</button><br />
+    <button onclick="baitap_3()">bai 3</button><br />
+    <button onclick="baitap_4()">bai 4</button><br />
+    <button onclick="baitap_5()">bai 5</button><br />
+    <button onclick="baitap_6()">bai 6</button><br />
+    <button onclick="battap_7()">bai 7</button><br />
+    <button onclick="baitap_8()">bai 8</button><br />
+    <button onclick="baitap_9()">bai 9</button><br />
+
+    <!-- <script>
+        function baitap_1(){
+            var mang = [1, 3, 6, 8, 10, 14, 24, 60, 46];
+            var count = 0;
+            for(let i = 0;i<mang.length;i++){
+                if(mang[i]>=10){
+                    count++;
+                    document.write(mang[i]+"<br>")
+                }
+            }
+            document.write("cac so lon hon hoac bang 10: " + count + " so")
+        }
+    </script> -->
+
+    <!-- <script>
+        function baitap_2(){
+            var arrayNumb = [1, 2, 3, 50, 5, 30, 6, 7, 8, 9, 10];
+            var max = 0;
+            var pos = 0; 
+
+            if(arrayNumb.length < 1) {
+                document.write('Mang nay khong co phan tu nao');
+            } else {
+                max = arrayNumb[0];
+                pos = 0;
+
+                for (let i = 0; i < arrayNumb.length; i++) {
+                    if (arrayNumb[i] > max) {
+                        max = arrayNumb[i];
+                        pos = i;
+                    }
+                }
+
+                document.write("vi tri cua phan tu do la: " + pos)
+                document.write("gia tri max la: " + max)
+            }
+
+        }
+    </script> -->
+
+    <!-- <script>
+        function baitap_3() {
+            var num = [21, 22, 42, 53, 65, 10, 94, 25, 30, 20];
+            var max = num[0];
+            var pos = 0;
+            var total = 0; 
+            for(let i = 0; i<num.length;i++){
+                if(max < num[i]){
+                    max = num[i];
+                    pos = i;
+                }
+                total += num[i];
+            }
+            document.write('so lon nhat : ' + max)
+            document.write('o vi tri: '+ pos)
+            document.write(' tb cong: '+ total/num.length)
+        }
+    </script> -->
+
+    <!-- <script>
+        function baitap_4() {
+            var numb =parseFloat(prompt('nhập độ dài một mảng : '))
+            var newnumb = new Array(numb);
+            for(let i = 0; i< newnumb.length;i++) {
+                newnumb[i] = parseInt(prompt('nhập giá trị trong mảng : ' + i))
+            }
+            document.write('mảng ban đầu : '+ newnumb + '<br>')
+            var newnumbleft = newnumb.reverse()
+            document.write('mảng ngược lại : '+ newnumbleft)
+
+        }
+    </script> -->
+
+    <!-- <script>
+        function baitap_5() {
+            let tring = " 1, -3, 5, 7, -4, -9";
+            const newtring = tring.split(",")
+            let songuyenam = [];
+            for (let i = 0; i<newtring.length;i++){
+                if (newtring[i]<0) {
+                    songuyenam.push(newtring[i])
+                }
+                
+            }
+            document.write("số nguyên âm có : " + songuyenam + "<br>")
+            document.write("có: "+ songuyenam.length + " số")
+            
+        }
+    </script> -->
+
+    <!-- <script>
+      function baitap_6() {
+        var number = parseInt(prompt("nhập vào một mảng: "));
+        const newnumber = new Array(number);
+        for (let i = 0; i < newnumber.length; i++) {
+          newnumber[i] = parseInt(prompt("số trong mảng: " + i));
+        }
+        document.write("mảng ban đầu: " + newnumber + "<br>");
+        let V = parseInt(prompt("nhập phần tử V: "));
+        let check = true;
+        for (let j = 0; j < newnumber.length; j++) {
+          if (V == newnumber[j]) {
+            check = true;
+            break;
+          }
+        }
+        if ((check = true)) {
+          document.write("V thuộc mảng");
+        } else {
+          document.write("V 0 thuộc mảng");
+        }
+      }
+    </script> -->
+
+    <!-- <script>
+        function battap_7() {
+            var numB = new Array(10);
+            for (var i = 0;i < numB.length;i++) {
+                numB[i] =prompt('nhập các phần tử chuỗi: ')
+            }
+            document.write("mảng ban đầu: " + numB + "<br>")
+            var v = parseInt(prompt(" nhập phần tử V: "))
+            for (let i = 0; i<numB.length;i++) {
+                if( numB[i] == v){
+                    numB.splice(i,1);
+                    numB.push(0);
+                }
+            }
+            document.write("mảng sau:" +numB )
+        }
+    </script> -->
+
+    <!-- <script>
+      function baitap_8() {
+        var numBer = new Array(10);
+        for (var i = 0; i < numBer.length; i++) {
+          numBer[i] = parseInt(prompt("nhập chuỗi 10 số: "));
+        }
+        document.write("chuỗi ban đầu: " + numBer + "<br>");
+        numBer.sort(function (a, b) {
+          return b - a;
+        });
+        document.write("trình tự sắp xếp giảm dần: " + numBer);
+      }
+    </script> -->
+
+    <!-- <script>
+        function baitap_9(){
+            let numb_1 = new Array(10);
+            let numb_2 = new Array(10);
+            for (var i = 0; i < numb_1.length; i++) {
+                numb_1[i] = parseInt(prompt('nhập số của mảng một: '));
+            }
+            document.write('mảng thứ 1: ' + numb_1 + '<br>');
+            for (j = 0; j < numb_2.length; j++) {
+                numb_2[j] = parseInt(prompt('nhập số của mảng hai: '));
+            }
+            document.write('mảng thứ 2: ' + numb_2 + '<br>');
+            let numb_3 = [].concat(numb_1, numb_2)
+            document.write('mảng 3 sẽ là: ' + numb_3);
+        }
+    </script> -->
+  </body>
+</html>

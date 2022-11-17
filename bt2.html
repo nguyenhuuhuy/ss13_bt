@@ -8,15 +8,14 @@
 </head>
 <body>
     <script>
-        let numbers = [ -3, 5, 1, 3, 2, 10];
-        let max = numbers[0];
-        let index = 0 ; 
-        for (let i = 1; i < numbers.length; i++) {
-                if (numbers[i] > max) {
-                    
-                }
+        let en = ["Banana", "Apple" , "Orange"];
+        let vi = [ "chuoi", "tao", "cam"]
+        let input = prompt('nhập từ vào: ')
+        for(const key in en){
+            if(input==en[key]) {
+                document.write(vi[key])
             }
-            alert("max: " + max + " at position " + index);
+        }
     </script>
 </body>
 </html>
